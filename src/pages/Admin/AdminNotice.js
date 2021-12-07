@@ -9,10 +9,10 @@ const Background = styled.div`
   margin: 0 0 0 0;
 `;
 
-const AdminNotice = () => {
+const AdminNotice = ({ match }) => {
   return (
     <Background>
-      <ManageTemplate />
+      <ManageTemplate id={match} />
       <WriteNotice />
     </Background>
   );

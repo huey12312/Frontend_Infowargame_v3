@@ -10,10 +10,10 @@ const Background = styled.div`
   margin: 0 0 0 0;
 `;
 
-const AdminEvent = () => {
+const AdminEvent = ({ match }) => {
   return (
     <Background>
-      <ManageTemplate />
+      <ManageTemplate id={match} />
       <WriteEvent />
     </Background>
   );

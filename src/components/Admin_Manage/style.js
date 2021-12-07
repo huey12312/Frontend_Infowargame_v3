@@ -8,11 +8,11 @@ export const DefaultLinkStyled = styled(Link)`
 export const LinkStyled = styled(DefaultLinkStyled)`
   width: 291px;
   height: 56px;
-  background-color: #fff;
+  background-color: #2c2c2c;
   border-radius: 10px;
   margin-top: 7px;
 
-  color: #2c2c2c;
+  color: #fff;
   font-size: 28px;
   font-weight: 500;
   text-align: center;
@@ -48,7 +48,7 @@ export const LinkStyled = styled(DefaultLinkStyled)`
 export const HeaderStyled = styled.div`
   width: 303px;
   height: 160px;
-  background-color: #2c2c2c;
+  background-color: #f9f9f9;
   position: relative;
 `;
 
@@ -84,7 +84,7 @@ export const TitleTextAreaStyled = styled.div`
     }
     &:nth-child(2) {
       font-family: "CookieRun-Regular", sans-serif;
-      color: #fff;
+      color: #2c2c2c;
       font-size: 28px;
     }
   }
@@ -93,7 +93,7 @@ export const TitleTextAreaStyled = styled.div`
 // Set the login/logout button style.
 export const AccountButtonStyled = styled.div`
   font-family: "Noto Sans KR", sans-serif;
-  color: #fff;
+  color: #2c2c2c;
   font-size: 20px;
 
   position: absolute;

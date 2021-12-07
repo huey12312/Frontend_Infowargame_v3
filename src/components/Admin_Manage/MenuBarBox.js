@@ -8,7 +8,7 @@ const MenuBarHeader = () => {
         <S.MainLogoStyled />
         <S.DefaultLinkStyled to="/">
           <S.TitleTextAreaStyled>
-            <div>INFO</div>
+            <div>ADMIN</div>
             <div>WARGAME</div>
           </S.TitleTextAreaStyled>
         </S.DefaultLinkStyled>

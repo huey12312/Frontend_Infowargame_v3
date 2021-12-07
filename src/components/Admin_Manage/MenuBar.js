@@ -3,6 +3,7 @@ import MenuBarBox from "./MenuBarBox";
 import * as S from "./style";
 
 const DefaultTemplete = (params) => {
+  console.log(params.page);
   let mainTopic;
   switch (params.page) {
     case "pwnable":
@@ -10,14 +11,14 @@ const DefaultTemplete = (params) => {
     case "web":
       mainTopic = "challenge";
       break;
-    case "notice":
-      mainTopic = "notice";
+    case "notification":
+      mainTopic = "notification";
       break;
-    case "event":
-      mainTopic = "event";
+    case "adminevent":
+      mainTopic = "adminevent";
       break;
-    case "user":
-      mainTopic = "user";
+    case "users":
+      mainTopic = "users";
       break;
     default:
       mainTopic = "/";
@@ -31,54 +32,33 @@ const DefaultTemplete = (params) => {
           <S.LinkStyled to="/Adminctf/pwnable">
             <div
               className={
-                mainTopic === "challenge" ? "btn__black" : "btn__white"
+                mainTopic === "challenge" ? "btn__white" : "btn__black"
               }
             >
               CHALLENGE
             </div>
           </S.LinkStyled>
-          <S.SubAreaStyled>
-            <S.DefaultLinkStyled to="/Adminctf/pwnable">
-              <div
-                className={
-                  params.page === "pwnable" ? "btn__black" : "btn__white"
-                }
-              >
-                Pwnable
-              </div>
-            </S.DefaultLinkStyled>
-            <S.DefaultLinkStyled to="/Adminctf/reversing">
-              <div
-                className={
-                  params.page === "reversing" ? "btn__black" : "btn__white"
-                }
-              >
-                Reversing
-              </div>
-            </S.DefaultLinkStyled>
-            <S.DefaultLinkStyled to="/Adminctf/web">
-              <div
-                className={params.page === "web" ? "btn__black" : "btn__white"}
-              >
-                Web
-              </div>
-            </S.DefaultLinkStyled>
-          </S.SubAreaStyled>
         </S.TopicAreaStyled>
         <S.LinkStyled to="/notification">
-          <div className={mainTopic === "notice" ? "btn__black" : "btn__white"}>
+          <div
+            className={
+              mainTopic === "notification" ? "btn__white" : "btn__black"
+            }
+          >
             NOTICE
           </div>
         </S.LinkStyled>
 
         <S.LinkStyled to="/adminevent">
-          <div className={mainTopic === "event" ? "btn__black" : "btn__white"}>
+          <div
+            className={mainTopic === "adminevent" ? "btn__white" : "btn__black"}
+          >
             EVENT
           </div>
         </S.LinkStyled>
 
         <S.LinkStyled to="/users">
-          <div className={mainTopic === "user" ? "btn__black" : "btn__white"}>
+          <div className={mainTopic === "users" ? "btn__white" : "btn__black"}>
             USER
           </div>
         </S.LinkStyled>

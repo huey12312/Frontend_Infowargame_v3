@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MenuBar from "../MenuBar";
+import MenuBar from "./MenuBar";
 import ProblemBox from "./ProblemBox";
 import useCtfProblems from "../../../hooks/useCtfProblems";
 import CtfDetailQ from "./CtfDetailQ";

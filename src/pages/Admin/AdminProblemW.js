@@ -10,10 +10,10 @@ const Background = styled.div`
   margin: 0 0 0 0;
 `;
 
-const AdminProblemW = () => {
+const AdminProblemW = ({ match }) => {
   return (
     <Background>
-      <ManageTemplate />
+      <ManageTemplate id={match} />
       <WriteProblem />
     </Background>
   );
